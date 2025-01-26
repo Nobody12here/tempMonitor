@@ -12,7 +12,7 @@ using System.Text;
 using LibreHardwareMonitor.Hardware;
 using Newtonsoft.Json.Linq;
 
-namespace WindowsFormsApp1
+namespace SystemShieldClientApp
 {
     partial class Form1 : Form
     {
@@ -42,8 +42,9 @@ private void Form1_Load(object sender, EventArgs e)
 
         private void Form1_FormClosing(Object sender, FormClosingEventArgs e)
         {
-            UpdateOnlineStatus(false);
+            Console.WriteLine("Close working ");
             monitoringTokenSource?.Cancel();
+            UpdateOnlineStatus(false);
 
         }
 

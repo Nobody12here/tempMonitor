@@ -9,7 +9,7 @@ using System;
 class ApiHelper
 {
     static HttpClient client = new HttpClient();
-    public static string URL = "http://localhost:3000/api";
+    public static string URL = "https://fyp-term-241.vercel.app/api";
     public static async Task<HttpStatusCode> PostData(string url, StringContent data)
     {
         Console.WriteLine("Calling");
